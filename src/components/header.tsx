@@ -1,6 +1,6 @@
 "use client";
 
-import { Camera, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Input } from "./ui/input";
@@ -25,25 +25,10 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Camera className="h-6 w-6 text-primary" />
           <span className="font-bold sm:inline-block text-lg">
             E-Stock image
           </span>
         </Link>
-        <nav className="flex items-center space-x-6 text-sm font-medium">
-          <Link
-            href="/"
-            className="transition-colors hover:text-foreground/80 text-foreground"
-          >
-            Home
-          </Link>
-          <Link
-            href="/collections"
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-          >
-            Collections
-          </Link>
-        </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <div className="relative w-full max-w-sm">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
