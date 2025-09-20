@@ -1,3 +1,244 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "1",
+      "description": "Aerial view of a winding road in a forest.",
+      "imageUrl": "https://picsum.photos/seed/1/800/600",
+      "imageHint": "forest road",
+      "tags": ["nature", "forest", "road", "aerial", "travel"],
+      "color": "green",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "2",
+      "description": "Modern city skyline at dusk with illuminated buildings.",
+      "imageUrl": "https://picsum.photos/seed/2/800/600",
+      "imageHint": "city dusk",
+      "tags": ["city", "skyline", "dusk", "architecture", "urban"],
+      "color": "blue",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "3",
+      "description": "Close-up of a vibrant sunflower in a field.",
+      "imageUrl": "https://picsum.photos/seed/3/600/800",
+      "imageHint": "sunflower field",
+      "tags": ["flower", "sunflower", "nature", "summer", "yellow"],
+      "color": "yellow",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "id": "4",
+      "description": "A tranquil beach with turquoise water and white sand.",
+      "imageUrl": "https://picsum.photos/seed/4/800/600",
+      "imageHint": "beach water",
+      "tags": ["beach", "ocean", "summer", "travel", "sand"],
+      "color": "cyan",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "5",
+      "description": "Majestic snow-capped mountain range under a clear blue sky.",
+      "imageUrl": "https://picsum.photos/seed/5/800/600",
+      "imageHint": "mountain snow",
+      "tags": ["mountain", "snow", "landscape", "nature", "winter"],
+      "color": "blue",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "6",
+      "description": "A delicious-looking stack of pancakes with syrup and berries.",
+      "imageUrl": "https://picsum.photos/seed/6/600/800",
+      "imageHint": "pancakes food",
+      "tags": ["food", "pancakes", "breakfast", "sweet", "dessert"],
+      "color": "brown",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "id": "7",
+      "description": "Abstract geometric pattern with colorful shapes.",
+      "imageUrl": "https://picsum.photos/seed/7/800/600",
+      "imageHint": "abstract pattern",
+      "tags": ["abstract", "geometric", "colorful", "pattern", "background"],
+      "color": "multi",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "8",
+      "description": "A person working on a laptop in a modern coffee shop.",
+      "imageUrl": "https://picsum.photos/seed/8/800/600",
+      "imageHint": "person laptop",
+      "tags": ["work", "laptop", "coffee", "remote work", "freelance"],
+      "color": "brown",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "9",
+      "description": "A cute red panda resting on a tree branch.",
+      "imageUrl": "https://picsum.photos/seed/9/800/600",
+      "imageHint": "red panda",
+      "tags": ["animal", "red panda", "cute", "nature", "wildlife"],
+      "color": "orange",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "10",
+      "description": "Minimalist interior design of a living room with a green plant.",
+      "imageUrl": "https://picsum.photos/seed/10/600/800",
+      "imageHint": "interior design",
+      "tags": ["interior", "minimalist", "home", "design", "plant"],
+      "color": "white",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "id": "11",
+      "description": "A vintage car parked on a street in Havana, Cuba.",
+      "imageUrl": "https://picsum.photos/seed/11/800/600",
+      "imageHint": "vintage car",
+      "tags": ["car", "vintage", "cuba", "street", "travel"],
+      "color": "red",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "12",
+      "description": "Hot air balloons flying over a desert landscape at sunrise.",
+      "imageUrl": "https://picsum.photos/seed/12/800/600",
+      "imageHint": "air balloons",
+      "tags": ["hot air balloon", "desert", "sunrise", "travel", "adventure"],
+      "color": "orange",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "13",
+      "description": "A dense and mysterious foggy forest.",
+      "imageUrl": "https://picsum.photos/seed/13/800/600",
+      "imageHint": "foggy forest",
+      "tags": ["forest", "fog", "mist", "nature", "moody"],
+      "color": "gray",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "14",
+      "description": "A programmer coding on multiple monitors in a dark room.",
+      "imageUrl": "https://picsum.photos/seed/14/800/600",
+      "imageHint": "programming code",
+      "tags": ["programming", "code", "technology", "developer", "dark"],
+      "color": "black",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "15",
+      "description": "Colorful spices arranged in bowls at a market.",
+      "imageUrl": "https://picsum.photos/seed/15/800/600",
+      "imageHint": "spices market",
+      "tags": ["spices", "market", "food", "colorful", "cooking"],
+      "color": "multi",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "16",
+      "description": "A lone hiker standing on a cliff overlooking a valley.",
+      "imageUrl": "https://picsum.photos/seed/16/600/800",
+      "imageHint": "hiker valley",
+      "tags": ["hiking", "adventure", "landscape", "nature", "mountains"],
+      "color": "green",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "id": "17",
+      "description": "A macro shot of water droplets on a spider web.",
+      "imageUrl": "https://picsum.photos/seed/17/800/600",
+      "imageHint": "water droplets",
+      "tags": ["macro", "water", "droplets", "nature", "abstract"],
+      "color": "blue",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "18",
+      "description": "A field of purple lavender flowers in Provence, France.",
+      "imageUrl": "https://picsum.photos/seed/18/800/600",
+      "imageHint": "lavender field",
+      "tags": ["lavender", "field", "france", "nature", "purple"],
+      "color": "purple",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "19",
+      "description": "A person practicing yoga on a mat at sunrise.",
+      "imageUrl": "https://picsum.photos/seed/19/800/600",
+      "imageHint": "yoga sunrise",
+      "tags": ["yoga", "health", "sunrise", "wellness", "fitness"],
+      "color": "orange",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "20",
+      "description": "The Northern Lights (Aurora Borealis) over a frozen landscape.",
+      "imageUrl": "https://picsum.photos/seed/20/800/600",
+      "imageHint": "northern lights",
+      "tags": ["aurora", "northern lights", "night", "sky", "winter"],
+      "color": "green",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "21",
+      "description": "An old library with towering shelves of books.",
+      "imageUrl": "https://picsum.photos/seed/21/600/800",
+      "imageHint": "library books",
+      "tags": ["library", "books", "reading", "knowledge", "architecture"],
+      "color": "brown",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "id": "22",
+      "description": "A surfer catching a large wave.",
+      "imageUrl": "https://picsum.photos/seed/22/800/600",
+      "imageHint": "surfer wave",
+      "tags": ["surfing", "ocean", "wave", "sport", "summer"],
+      "color": "blue",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "23",
+      "description": "A close-up of a steaming cup of coffee.",
+      "imageUrl": "https://picsum.photos/seed/23/800/600",
+      "imageHint": "coffee cup",
+      "tags": ["coffee", "cup", "drink", "morning", "cafe"],
+      "color": "black",
+      "width": 800,
+      "height": 600
+    },
+    {
+      "id": "24",
+      "description": "A cat looking curiously at the camera.",
+      "imageUrl": "https://picsum.photos/seed/24/800/600",
+      "imageHint": "cat curious",
+      "tags": ["cat", "animal", "pet", "cute", "curious"],
+      "color": "gray",
+      "width": 800,
+      "height": 600
+    }
+  ]
 }
