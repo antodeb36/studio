@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useState } from "react";
+import { useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import type { StockImage } from "@/lib/images";
 import { ImageCard } from "./image-card";
@@ -18,7 +18,7 @@ interface ImageGalleryProps {
 
 const colors = ["red", "orange", "yellow", "green", "cyan", "blue", "purple", "brown", "black", "white", "gray", "multi"];
 
-function GalleryContents({ allImages }: ImageGalleryProps) {
+export function ImageGallery({ allImages }: ImageGalleryProps) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
@@ -98,12 +98,4 @@ function GalleryContents({ allImages }: ImageGalleryProps) {
       )}
     </div>
   );
-}
-
-export function ImageGallery(props: ImageGalleryProps) {
-  return (
-    <Suspense>
-      <GalleryContents {...props} />
-    </Suspense>
-  )
 }
