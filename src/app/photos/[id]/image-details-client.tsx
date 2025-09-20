@@ -27,7 +27,7 @@ export function ImageDetailsClient({ image }: { image: StockImage }) {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = `e-stock-image-${image.id}.jpg`;
+      a.download = `e-stock-photo-${image.id}.jpg`;
       document.body.appendChild(a);
       a.click();
       a.remove();
