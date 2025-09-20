@@ -38,7 +38,7 @@ export default function PhotoPage({ params }: { params: { id: string } }) {
             </div>
             <div className="lg:col-span-1">
               <div className="sticky top-24">
-                <h1 className="text-2xl font-bold leading-tight mb-2">Photo by All time: Anto</h1>
+                <h1 className="text-2xl font-bold leading-tight mb-2">Photo by Anto</h1>
                 <p className="text-muted-foreground mb-4">{image.description}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {image.tags.map((tag) => (
