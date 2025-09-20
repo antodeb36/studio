@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useToast } from './use-toast';
 
-const COLLECTIONS_KEY = 'imageflow_collections';
+const COLLECTIONS_KEY = 'e_stock_image_collections';
 
 export const useCollections = () => {
   const [collection, setCollection] = useState<string[]>([]);
