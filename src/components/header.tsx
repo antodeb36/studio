@@ -6,12 +6,12 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Input } from "./ui/input";
 import { useDebouncedCallback } from "use-debounce";
 import { Button } from "./ui/button";
+import { Suspense } from "react";
 
-export function Header() {
+function SearchBar() {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
-  const isCollectionsPage = pathname === '/collections';
 
   const handleSearch = useDebouncedCallback((term: string) => {
     const params = new URLSearchParams(searchParams);
@@ -24,39 +24,35 @@ export function Header() {
   }, 300);
 
   return (
+    <div className="relative w-full max-w-sm">
+      <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+      <Input
+        type="search"
+        placeholder="Search images..."
+        className="pl-9"
+        onChange={(e) => handleSearch(e.target.value)}
+        defaultValue={searchParams.get("q")?.toString()}
+      />
+    </div>
+  );
+}
+
+export function Header() {
+  const pathname = usePathname();
+  const isCollectionsPage = pathname === '/collections';
+
+  return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Camera className="h-6 w-6" />
           <span className="font-bold sm:inline-block text-lg">
-            E-Stock
+            E-Stock image
           </span>
         </Link>
-        <nav className="flex items-center space-x-6 text-sm font-medium">
-          <Link
-            href="/"
-            className={`transition-colors hover:text-foreground/80 ${pathname === '/' ? 'text-foreground' : 'text-foreground/60'}`}
-          >
-            Home
-          </Link>
-          <Link
-            href="/collections"
-            className={`transition-colors hover:text-foreground/80 ${pathname === '/collections' ? 'text-foreground' : 'text-foreground/60'}`}
-          >
-            Collections
-          </Link>
-        </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
-          <div className="relative w-full max-w-sm">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input
-              type="search"
-              placeholder="Search images..."
-              className="pl-9"
-              onChange={(e) => handleSearch(e.target.value)}
-              defaultValue={searchParams.get("q")?.toString()}
-            />
-          </div>
+          <Suspense fallback={<div>Loading...</div>}>
+            <SearchBar />
+          </Suspense>
           {isCollectionsPage && (
             <Button>
               <Link href="/">Explore</Link>
