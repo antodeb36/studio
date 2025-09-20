@@ -3,62 +3,62 @@
     {
       "id": "1",
       "description": "A person walking on a beach at sunset.",
-      "imageUrl": "https://picsum.photos/seed/1/800/600",
+      "imageUrl": "https://picsum.photos/seed/1/600/800",
       "imageHint": "beach sunset",
       "tags": ["beach", "sunset", "ocean", "person", "walking"],
       "color": "orange",
-      "width": 800,
-      "height": 600
+      "width": 600,
+      "height": 800
     },
     {
       "id": "2",
       "description": "A field of sunflowers under a blue sky.",
-      "imageUrl": "https://picsum.photos/seed/2/800/600",
+      "imageUrl": "https://picsum.photos/seed/2/600/800",
       "imageHint": "sunflower field",
       "tags": ["sunflower", "field", "yellow", "nature", "sky"],
       "color": "yellow",
-      "width": 800,
-      "height": 600
+      "width": 600,
+      "height": 800
     },
     {
       "id": "3",
       "description": "A cup of coffee on a wooden table.",
-      "imageUrl": "https://picsum.photos/seed/3/800/600",
+      "imageUrl": "https://picsum.photos/seed/3/600/800",
       "imageHint": "coffee cup",
       "tags": ["coffee", "cup", "table", "drink", "morning"],
       "color": "brown",
-      "width": 800,
-      "height": 600
+      "width": 600,
+      "height": 800
     },
     {
       "id": "4",
       "description": "A forest with sunbeams shining through the trees.",
-      "imageUrl": "https://picsum.photos/seed/4/800/600",
+      "imageUrl": "https://picsum.photos/seed/4/600/800",
       "imageHint": "forest sunbeams",
       "tags": ["forest", "sun", "trees", "nature", "light"],
       "color": "green",
-      "width": 800,
-      "height": 600
+      "width": 600,
+      "height": 800
     },
     {
       "id": "5",
       "description": "A mountain range with a lake in the foreground.",
-      "imageUrl": "https://picsum.photos/seed/5/800/600",
+      "imageUrl": "https://picsum.photos/seed/5/600/800",
       "imageHint": "mountain lake",
       "tags": ["mountain", "lake", "nature", "landscape", "water"],
       "color": "blue",
-      "width": 800,
-      "height": 600
+      "width": 600,
+      "height": 800
     },
     {
       "id": "6",
       "description": "A city street at night with light trails from cars.",
-      "imageUrl": "https://picsum.photos/seed/6/800/600",
+      "imageUrl": "https://picsum.photos/seed/6/600/800",
       "imageHint": "city night",
       "tags": ["city", "night", "lights", "street", "urban"],
       "color": "blue",
-      "width": 800,
-      "height": 600
+      "width": 600,
+      "height": 800
     },
     {
       "id": "7",
@@ -73,32 +73,32 @@
     {
       "id": "8",
       "description": "A person hiking in the mountains.",
-      "imageUrl": "https://picsum.photos/seed/8/800/600",
+      "imageUrl": "https://picsum.photos/seed/8/600/800",
       "imageHint": "hiking mountains",
       "tags": ["hiking", "mountains", "person", "adventure", "nature"],
       "color": "green",
-      "width": 800,
-      "height": 600
+      "width": 600,
+      "height": 800
     },
     {
       "id": "9",
       "description": "A dog playing in a field.",
-      "imageUrl": "https://picsum.photos/seed/9/800/600",
+      "imageUrl": "https://picsum.photos/seed/9/600/800",
       "imageHint": "dog field",
       "tags": ["dog", "field", "animal", "pet", "play"],
       "color": "brown",
-      "width": 800,
-      "height": 600
+      "width": 600,
+      "height": 800
     },
     {
       "id": "10",
       "description": "A desert landscape at sunset.",
-      "imageUrl": "https://picsum.photos/seed/10/800/600",
+      "imageUrl": "https://picsum.photos/seed/10/600/800",
       "imageHint": "desert sunset",
       "tags": ["desert", "sunset", "landscape", "nature", "sand"],
       "color": "orange",
-      "width": 800,
-      "height": 600
+      "width": 600,
+      "height": 800
     },
     {
       "id": "11",
@@ -113,12 +113,12 @@
     {
       "id": "12",
       "description": "A boat on a calm lake.",
-      "imageUrl": "https://picsum.photos/seed/12/800/600",
+      "imageUrl": "https://picsum.photos/seed/12/600/800",
       "imageHint": "boat lake",
       "tags": ["boat", "lake", "water", "calm", "nature"],
       "color": "blue",
-      "width": 800,
-      "height": 600
+      "width": 600,
+      "height": 800
     }
   ]
 }
