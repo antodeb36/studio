@@ -7,6 +7,8 @@ import { Input } from "./ui/input";
 import { useDebouncedCallback } from "use-debounce";
 import { Suspense } from "react";
 import Image from "next/image";
+import { Button } from "./ui/button";
+import { Heart } from "lucide-react";
 
 function SearchBar() {
   const searchParams = useSearchParams();
@@ -42,18 +44,24 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
-        <div>
+      <div className="container flex h-16 items-center">
+        <div className="mr-auto">
           <Link href="/">
-            <Image src="https://drive.google.com/uc?export=download&id=1AG06J7S8dbVK-r27USyHKQd2sU5OQYR9" alt="E-Stock logo" width={120} height={40} />
+            <Image src="https://drive.google.com/uc?id=1i3HS2JxcV5_oqKj6893LmWQXTEyxd4Cf&export=download" alt="E-Stock logo" width={120} height={40} />
           </Link>
         </div>
-        <div className="flex items-center justify-end space-x-4">
+        <div className="flex items-center space-x-4">
           {pathname === '/' && (
             <Suspense>
               <SearchBar />
             </Suspense>
           )}
+           <Button variant="ghost" size="icon" asChild>
+            <Link href="/collections">
+              <Heart />
+              <span className="sr-only">Collections</span>
+            </Link>
+          </Button>
         </div>
       </div>
     </header>
