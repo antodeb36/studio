@@ -47,7 +47,7 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-auto">
           <Link href="/">
-            <Image src="https://drive.google.com/uc?id=1i3HS2JxcV5_oqKj6893LmWQXTEyxd4Cf&export=download" alt="E-Stock logo" width={120} height={40} />
+            <Image src="https://drive.google.com/uc?id=1vWhPDgBaDrUvaOjBqHcdVWIUWnKIxAae&export=download" alt="E-Stock logo" width={120} height={40} />
           </Link>
         </div>
         <div className="flex items-center space-x-4">
