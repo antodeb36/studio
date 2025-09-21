@@ -42,8 +42,8 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
-        <div className="mr-auto">
+      <div className="container flex h-16 items-center justify-between">
+        <div>
           <Link href="/">
             <Image src="https://drive.google.com/uc?export=download&id=1AG06J7S8dbVK-r27USyHKQd2sU5OQYR9" alt="E-Stock logo" width={120} height={40} />
           </Link>
