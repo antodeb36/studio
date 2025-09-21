@@ -1,12 +1,12 @@
 "use client";
 
-import { Search, Camera } from "lucide-react";
+import { Search } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Input } from "./ui/input";
 import { useDebouncedCallback } from "use-debounce";
-import { Button } from "./ui/button";
 import { Suspense } from "react";
+import Image from "next/image";
 
 function SearchBar() {
   const searchParams = useSearchParams();
@@ -39,24 +39,18 @@ function SearchBar() {
 
 export function Header() {
   const pathname = usePathname();
-  const isCollectionsPage = pathname === '/collections';
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <span className="font-bold sm:inline-block text-lg">
-            E-Stock image
-          </span>
+          <Image src="https://drive.google.com/uc?export=download&id=1AG06J7S8dbVK-r27USyHKQd2sU5OQYR9" alt="E-Stock logo" width={120} height={40} />
         </Link>
         <div className="flex flex-1 items-center justify-end space-x-4">
-          <Suspense fallback={<div>Loading...</div>}>
-            <SearchBar />
-          </Suspense>
-          {isCollectionsPage && (
-            <Button>
-              <Link href="/">Explore</Link>
-            </Button>
+          {pathname === '/' && (
+            <Suspense>
+              <SearchBar />
+            </Suspense>
           )}
         </div>
       </div>
