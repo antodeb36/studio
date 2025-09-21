@@ -43,10 +43,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
+        <Link href="/" className="mr-auto">
           <Image src="https://drive.google.com/uc?export=download&id=1AG06J7S8dbVK-r27USyHKQd2sU5OQYR9" alt="E-Stock logo" width={120} height={40} />
         </Link>
-        <div className="flex flex-1 items-center justify-end space-x-4">
+        <div className="flex items-center justify-end space-x-4">
           {pathname === '/' && (
             <Suspense>
               <SearchBar />
