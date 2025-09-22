@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { ImageDetailsClient } from "./image-details-client";
 import { ImageCard } from "@/components/image-card";
 import { Separator } from "@/components/ui/separator";
+import { AdBanner } from "@/components/ad-banner";
 
 export default function PhotoPage({ params }: { params: { id: string } }) {
   const image = getImageById(params.id);
@@ -26,15 +27,18 @@ export default function PhotoPage({ params }: { params: { id: string } }) {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-            <div className="lg:col-span-2 bg-card p-4 rounded-lg shadow-sm flex items-center justify-center">
-              <Image
-                src={image.imageUrl}
-                alt={image.description}
-                width={image.width}
-                height={image.height}
-                className="max-h-[80vh] w-auto h-auto object-contain rounded-md"
-                priority
-              />
+            <div className="lg:col-span-2">
+              <div className="bg-card p-4 rounded-lg shadow-sm flex items-center justify-center mb-4">
+                <Image
+                  src={image.imageUrl}
+                  alt={image.description}
+                  width={image.width}
+                  height={image.height}
+                  className="max-h-[80vh] w-auto h-auto object-contain rounded-md"
+                  priority
+                />
+              </div>
+              <AdBanner />
             </div>
             <div className="lg:col-span-1">
               <div className="sticky top-24">
