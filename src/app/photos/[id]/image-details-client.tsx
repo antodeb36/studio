@@ -19,29 +19,10 @@ export function ImageDetailsClient({ image }: { image: StockImage }) {
 
   const inCollection = isInCollection(image.id);
 
-  const handleDownload = async () => {
-    setIsDownloading(true);
-    try {
-      const response = await fetch(image.imageUrl);
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `e-stock-photo-${image.id}.jpg`;
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      window.URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error("Download failed:", error);
-      toast({
-        title: "Download failed",
-        description: "Could not download the image. Please try again.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsDownloading(false);
-    }
+  const handleDownload = () => {
+    // Open the image in a new tab. The user can then right-click to save.
+    // This is a workaround for CORS issues when trying to fetch from Google Drive.
+    window.open(image.imageUrl, '_blank');
   };
 
   const handleSuggestTags = async () => {
