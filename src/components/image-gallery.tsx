@@ -11,6 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { AdBanner } from "./ad-banner";
 
 interface ImageGalleryProps {
   allImages: StockImage[];
@@ -86,8 +87,15 @@ export function ImageGallery({ allImages }: ImageGalleryProps) {
 
       {sortedImages.length > 0 ? (
         <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-          {sortedImages.map((image) => (
-            <ImageCard key={image.id} image={image} />
+          {sortedImages.map((image, index) => (
+            <>
+              <ImageCard key={image.id} image={image} />
+              {(index + 1) % 6 === 0 && (
+                <div className="sm:col-span-2 lg:col-span-3 xl:col-span-4">
+                  <AdBanner />
+                </div>
+              )}
+            </>
           ))}
         </div>
       ) : (
