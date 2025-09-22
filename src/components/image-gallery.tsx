@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import type { StockImage } from "@/lib/images";
 import { ImageCard } from "./image-card";
@@ -88,14 +88,14 @@ export function ImageGallery({ allImages }: ImageGalleryProps) {
       {sortedImages.length > 0 ? (
         <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {sortedImages.map((image, index) => (
-            <>
-              <ImageCard key={image.id} image={image} />
+            <Fragment key={image.id}>
+              <ImageCard image={image} />
               {(index + 1) % 6 === 0 && (
-                <div className="sm:col-span-2 lg:col-span-3 xl:col-span-4">
+                <div className="sm:col-span-2 lg:col-span-3 xl:col-span-4 my-4">
                   <AdBanner />
                 </div>
               )}
-            </>
+            </Fragment>
           ))}
         </div>
       ) : (
