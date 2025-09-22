@@ -1,46 +1,28 @@
 "use client";
 
-import Script from "next/script";
 import { useEffect, useRef } from "react";
 
 export function AdBanner() {
   const adContainerRef = useRef<HTMLDivElement>(null);
-  const adLoaded = useRef(false);
 
   useEffect(() => {
-    // Check if the ad has already been loaded to prevent duplicates
     if (adContainerRef.current && !adContainerRef.current.hasChildNodes()) {
-      try {
-        const atOptions = {
-          'key' : 'dd12de45e26457221d7ba5ff89d2434b',
-          'format' : 'iframe',
-          'height' : 60,
-          'width' : 468,
-          'params' : {}
-        };
-        
-        const script = document.createElement('script');
-        script.type = 'text/javascript';
-        // Using innerHTML to set the content of the script tag
-        script.innerHTML = `
-          atOptions = ${JSON.stringify(atOptions)};
-        `;
-        adContainerRef.current.appendChild(script);
-
-        const invokeScript = document.createElement('script');
-        invokeScript.type = 'text/javascript';
-        invokeScript.src = '//www.highperformanceformat.com/dd12de45e26457221d7ba5ff89d2434b/invoke.js';
-        adContainerRef.current.appendChild(invokeScript);
-        
-      } catch (error) {
-        console.error("Ad script failed to load:", error);
-      }
+      const script = document.createElement('script');
+      script.async = true;
+      script.setAttribute('data-cfasync', 'false');
+      script.src = '//pl27698582.revenuecpmgate.com/f2a247c5464320760236868ceca4079d/invoke.js';
+      
+      const container = document.createElement('div');
+      container.id = 'container-f2a247c5464320760236868ceca4079d';
+      
+      adContainerRef.current.appendChild(script);
+      adContainerRef.current.appendChild(container);
     }
   }, []);
 
   return (
-    <div className="flex justify-center items-center my-4 w-full h-[60px]">
-       <div ref={adContainerRef} style={{ width: '468px', height: '60px' }} className="flex justify-center items-center"></div>
+    <div className="flex justify-center items-center my-4 w-full">
+       <div ref={adContainerRef} className="flex justify-center items-center"></div>
     </div>
   );
 }
