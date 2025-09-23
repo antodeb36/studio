@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import { cn } from '@/lib/utils';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'E-Stock image',
@@ -21,6 +22,16 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className={cn("font-body antialiased min-h-screen bg-background")} suppressHydrationWarning>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-2JBGKJRKJT"></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-2JBGKJRKJT');
+          `}
+        </Script>
         {children}
         <Toaster />
       </body>
