@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { ImageDetailsClient } from "./image-details-client";
 import { ImageCard } from "@/components/image-card";
 import { Separator } from "@/components/ui/separator";
+import { AdBanner } from "@/components/ad-banner";
 
 export default function PhotoPage({ params }: { params: { id: string } }) {
   const image = getImageById(params.id);
@@ -37,6 +38,7 @@ export default function PhotoPage({ params }: { params: { id: string } }) {
                   priority
                 />
               </div>
+              <AdBanner />
             </div>
             <div className="lg:col-span-1">
               <div className="sticky top-24">
